@@ -1,4 +1,5 @@
-import {Text, View, StyleSheet} from "react-native";
+import {Text, View, StyleSheet,} from "react-native";
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {Link} from "expo-router";
 
 const styles = StyleSheet.create({
@@ -16,14 +17,15 @@ const styles = StyleSheet.create({
 
 export default function Index() {
     return (
-        <View
+        <SafeAreaView
             style={styles.container}
         >
             <Text
                 style={styles.textRed}
             >Hello World!!!
                 <Link href={"/about"}>About</Link>
+                <Link href={{pathname: "/pokemon/[id]", params: {id: 3}}}>Pokemon </Link>
             </Text>
-        </View>
+        </SafeAreaView>
     );
 }
