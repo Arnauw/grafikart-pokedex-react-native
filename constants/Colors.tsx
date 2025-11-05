@@ -6,7 +6,6 @@ export const Colors = {
         grayLight: "#E0E0E0",
         grayBackground: "#EFEFEF",
         grayWhite: "#FFFFFF",
-
     },
     light: {
         tint: "#DC0A20",
@@ -15,7 +14,6 @@ export const Colors = {
         grayLight: "#E0E0E0",
         grayBackground: "#EFEFEF",
         grayWhite: "#FFFFFF",
-
     },
     type: {
         bug: "#A7B723",
